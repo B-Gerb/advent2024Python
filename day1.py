@@ -13,7 +13,17 @@ rightValue.sort()
 for l,r in zip(leftValue, rightValue):
     differences+= abs(l-r)
 
-print(differences)
-
+print(f"Part 1: {differences}")
+dict = {}
+for v in rightValue:
+    if not (v in dict):
+        dict[v] = 1
+    else:
+        dict[v] = dict[v]+1
+total = 0 
+for v in leftValue:
+    if v in dict:
+        total += (v*dict[v])
+print(f"Part 1: {total}")
 
 infoF.close()
