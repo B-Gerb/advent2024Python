@@ -24,5 +24,5 @@ total = 0
 for v in leftValue:
     if v in dict:
         total += (v*dict[v])
-print(f"Part 1: {total}")
+print(f"Part 2: {total}")
 infoF.close()
