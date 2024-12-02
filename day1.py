@@ -25,5 +25,4 @@ for v in leftValue:
     if v in dict:
         total += (v*dict[v])
 print(f"Part 1: {total}")
-print("test")
 infoF.close()
