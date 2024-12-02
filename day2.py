@@ -11,13 +11,11 @@ def valid(part):
         else:
             if not ( 0 > (part[i+1] - part[i]) >= -3):
                 return False
-           # add = add and 0 > (part[i+1] - part[i]) >= -3
     return True
 
 infoF = open('day2Info.txt', 'r')
 lines = infoF.readlines()
 total = 0
-counter =1
 for x in lines:
     part = x.split()
     increasing = False
