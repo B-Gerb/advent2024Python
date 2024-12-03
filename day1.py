@@ -10,7 +10,7 @@ for x in lines:
 
 leftValue.sort()
 rightValue.sort()
-for l,r in zip(leftValue, rightValue):
+for l,r in zip(leftValue, rightValue,):
     differences+= abs(l-r)
 
 print(f"Part 1: {differences}")
