@@ -42,7 +42,6 @@ while (start[0]  != -1) and (start[0]  != len(lines))  and (start[1]  != -1) and
         else:
             start = (start[0], start[1] +1)
 total = 0
-print(lines)
 for i in lines:
     for x in i:
         if x=='X':
@@ -150,8 +149,7 @@ for i in range(len(lines)):
             if(copyStart[0] !=i or copyStart[1] != var):
                 copyValuesX = copy.deepcopy(valuesX)
                 copyValuesY = copy.deepcopy(valuesY)
-                if(i == 6 and var == 3):
-                    print("should")
+
 
                 if (i in valuesX and (not var in valuesX.get(i))):
                     copyValuesX.get(i).append(var)
