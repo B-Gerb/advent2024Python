@@ -18,12 +18,12 @@ for rob in infoF:
     v1,v2 = int(velocity.split(",")[0]),int(velocity.split(",")[1])
     robot = [p1,p2,v1,v2]
     robots.append(robot)
-    # x,y = location(wide, tall, robot, 100)
-    # if(x<100/2 and y <102/2): q1 +=1
-    # if(x>100/2 and y <102/2): q2 +=1
-    # if(x<100/2 and y >102/2): q3 +=1
-    # if(x>100/2 and y >102/2): q4 +=1
-
+    x,y = location(wide, tall, robot, 100)
+    if(x<100/2 and y <102/2): q1 +=1
+    if(x>100/2 and y <102/2): q2 +=1
+    if(x<100/2 and y >102/2): q3 +=1
+    if(x>100/2 and y >102/2): q4 +=1
+print(q1*q2*q3*q4)
 min_val = float("inf")
 time = -1
 for second in range(wide*tall):
